@@ -13,9 +13,10 @@
 
 .header {
     color: #FFFFFF;
-    height: 193px;
+    height: 20%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .header__title {
@@ -24,18 +25,17 @@
     font-family: 'Zoloto';
     font-size: 96px;
     font-weight: 400;
-    padding-top: 45px;
-
+    /* padding-top: 45px; */
 }
 
 .container {
-    height: 62%;
+    height: 80%;
 
 }
 
 .gallery {
-    height: 100%;
-    width: 98%;
+    height: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,6 @@
 
 .gallery__slide-window_big-row {
     display: block;
-    /* background-color: red; */
     height: 294px;
 }
 
@@ -84,15 +83,25 @@
 }
 
 
-
-
-
-.gallery__slide-window_middle-row {
-    /* background-color: green; */
-    /* height: 180px; */
+.action-button {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.gallery__slide-window_small-row {
-    /* background-color: blue;
-    height: 77px; */
+.action-button__button {
+    padding: 8px 60px;
+    background-color: #1c1c1c;
+    /* max-height: 80%; */
+    /* width: 299px; */
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 500;
+    /* background-color: white; */
+    font-size: 23px;
+    /* padding: 0px; */
+    box-shadow: 0px 0px 11px rgb(255 255 255 / 50%);
+    border-radius: 35px;
 }
