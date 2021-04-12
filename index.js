@@ -37,12 +37,15 @@ function customeMouseDown(evt) {
   this.addEventListener('mouseup', dontMoveThis)
 }
 
-
+function test(evt) {
+  this.style.backgroundColor = "#ffffff"
+}
 
 
 function addEventListeners(item) {
   item.addEventListener('wheel', function (evt) { handleScrollGallery.call(this, evt) })
   item.addEventListener('mousedown', function (evt) { customeMouseDown.call(this, evt) })
+  item.addEventListener('touchstart', function (evt) { test.call(this, evt) })
 }
 
 
