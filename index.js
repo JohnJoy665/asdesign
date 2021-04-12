@@ -38,7 +38,23 @@ function customeMouseDown(evt) {
 }
 
 function test(evt) {
-  this.style.backgroundColor = "#ffffff"
+  dragObj.downX = evt.changedTouches[0].clientX
+  const positionElem = this.scrollLeft
+
+  function moveThis(evt) {
+    evt.preventDefault()
+    const mousePoint = evt.changedTouches[0].clientX
+    const firstPoint = dragObj.downX
+    this.scrollLeft =  positionElem - (mousePoint-firstPoint);
+  }
+
+  function dontMoveThis(evt) {
+    evt.preventDefault()
+    this.removeEventListener('touchmove', moveThis)
+  }
+
+  this.addEventListener('touchmove', moveThis)
+  this.addEventListener('touchend', dontMoveThis)
 }
 
 
