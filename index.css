@@ -1,0 +1,98 @@
+@import url(./vendor/normolize.css);
+@font-face {
+    font-family: "Zoloto";
+    src: url("./vendor/fonts/Zoloto.otf") format("opentype");
+   }
+
+.page {
+    background-color: #1C1C1C;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+}
+
+.header {
+    color: #FFFFFF;
+    height: 193px;
+    display: flex;
+    justify-content: center;
+}
+
+.header__title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Zoloto';
+    font-size: 96px;
+    font-weight: 400;
+    padding-top: 45px;
+
+}
+
+.container {
+    height: 62%;
+
+}
+
+.gallery {
+    height: 100%;
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery__slide-window_big-row {
+    display: block;
+    /* background-color: red; */
+    height: 294px;
+}
+
+.gallery__slider {
+    overflow: hidden;
+    height: inherit;
+}
+
+.gallery__list {
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-rows: 100%;
+    grid-auto-flow: column;
+    grid-gap: 15px;
+}
+
+.gallery__item {
+    width: fit-content;
+    overflow: hidden;
+    text-decoration: none;
+    height: inherit;
+}
+
+
+.gallery__img {
+    object-fit: cover;
+    max-height: 100%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+.gallery__img:hover {
+    transform: scale(1.2)
+}
+
+
+
+
+
+.gallery__slide-window_middle-row {
+    /* background-color: green; */
+    /* height: 180px; */
+}
+
+.gallery__slide-window_small-row {
+    /* background-color: blue;
+    height: 77px; */
+}
